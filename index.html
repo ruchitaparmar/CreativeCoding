@@ -1,525 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
 
-<!--
-____________
-|          |
-| OH       |
-| HELLO    |
-|__________|
-(\__/)||
-(•ㅅ•)||
-/ 　  づ
--->
+<!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>Creative Coding Using P5.js</title>
+<meta property="og:title" content="Creative Coding" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="p5JS" />
+<meta property="og:description" content="p5JS" />
+<link rel="canonical" href="https://ruchitaparmar.github.io/CreativeCoding/" />
+<meta property="og:url" content="https://ruchitaparmar.github.io/CreativeCoding/" />
+<meta property="og:site_name" content="CreativeCoding" />
+<script type="application/ld+json">
+{"name":"CreativeCoding","description":"JS30","author":null,"@type":"WebSite","url":"https://ruchitaparmar.github.io/CreativeCoding/","image":null,"publisher":null,"headline":"Creative Coding:","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
 
+    <meta name="description" content="JS30"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-<!--
-(.   \
-    \  |   
-     \ |___(\--/)
-   __/    (  . . )
-  "'._.    '-.O.'
-       '-.  \ "|\
-          '.,,/'.,,
+<!-- <style type="text/css">
 
--->          
-
-<!DOCTYPE HTML>
-<html>
-	<head>
-
-		<title>Ruchita Parmar</title>
-  		<meta charset="utf-8">
-	    <meta name="description" content="Ruchita Parmar, Web Developer,CSE student at Mumbai University">
-  	    <meta name="author" content="Ruchita Parmar">
-        <meta name="robots" content="index, follow">
-		<meta name="google-site-verification" content="ke4h64kyAZF5Ag86yUemqaupGhffjLC3L5srhqn5UT8" />
-        <meta name="keywords" content="Ruchita Parmar, Ruchita, Parmar, Mumbai University, DJSCOE, DJ Sanghvi, Web Developer, Creative Coding">
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>	
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel='stylesheet' href='https://unpkg.com/shell.js@1.0.5/dist/css/shell.min.css'>
-		<link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.css'>
-		<link rel='stylesheet' href='https://unpkg.com/jquery.terminal/css/jquery.terminal.css'>
-		<link rel='stylesheet' href='https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
-		<link rel="stylesheet" href="assets/css/style.css">
-
-	</head>
-
-	<body class="is-preload">
-
-		<!-- Wrapper-->
-		<div id="wrapper">
-
-			<!-- Nav -->
-			<nav id="nav">						
-				<a href="#" class="icon fa-home"><span>Home</span></a>
-				<a href="#work" class="icon fa-folder"><span>Work</span></a>
-				<a href="#art" class="icon fas fa-paint-brush"><span>Art</span></a>
-				<a href="#terminal" class="icon fa-terminal"><span>About</span></a>
-				<a href="#gallery" class="icon far fa-image"><span>Gallery</span></a>
-				<a href="#contact" class="icon fa-envelope"><span>Contact</span></a>
-			</nav>
-
-			<!-- Main -->
-			<div id="main">
-
-				<!-- Me -->
-				<article id="home" class="panel intro">
-					
-					<header>
-<!-- 						<h4>Hello!</h4>  -->
-						<h1>Hello! I'm Ruchita.</h1>
-						<p style="color: #191919;">I like astronomy, archaeology and many more things in between.</p>
-					</header>
-
-					<span class="jumplink pic" style="box-shadow: 0 3px 4px rgba(0,0,0,1); padding-top:50px; padding-right:50px;">
-						<div>
-							<img src="images/me.jpg"   alt="" />
-							<!-- <div class="circle"></div> -->
-						</div>
-					</span>		
-
-				</article>
-
-				<!-- Work -->
-				<article id="work" class="panel">
-				
-<!-- 				<header>
-						<h2></h2>
-					</header> -->
-
-					
-<!-- 					<p>Few of my academic and side projects.</p> -->
-
-					<section>
-
-						<header><h3> Featured Projects</h3></header>
-						<br>
-						<div class="row">
-							
-							<div class="box col-6 col-6-medium col-12-small"> 	
-								<div class="circle"></div>	
-								<a href="/portfolioWebsite/sharkIndex.html" class="image fit"><img class="projectButton" src="images/sharkProject2.jpg" alt=""></a>
-								<div class="desc projectTitle">Georgia Aquarium</div>
-								<p class="projectBrief">Case study to change the perception of humans towards sharks</p>
-							</div>
-
-							<div class="box col-6 col-6-medium col-12-small">	
-								<div class="circle"></div>			
-								<a href="/portfolioWebsite/underConstruction.html" target="_blank" class="image fit"><img class="projectButton" src="images/VIproject2.jpg" alt=""></a>
-								<div class="desc projectTitle">Adaptive Physical Education</div>
-								<p class="projectBrief">Design solution to make sports activities more accessible for visually impaired school children</p>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">
-								<div class="circle"></div>	
-								<a href="/portfolioWebsite/sewingMachineIndex.html" class="image fit"><img class="projectButton" src="images/SM2.jpg" alt=""></a>
-								<div class="desc projectTitle">Auto-spooling Sewing Machine</div>
-								<p class="projectBrief">An interactive box model of a sewing machine which spools the thread automatically</p>
-
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">
-								<div class="circle"></div>	
-								<a href="/portfolioWebsite/sewingMachineIndex.html" class="image fit"><img class="projectButton" src="images/hotGlueGunsProject.png" alt=""></a>
-								<div class="desc projectTitle">Hot Glue Guns</div>
-								<p class="projectBrief">Iterative design process for improving the ergonomics of a hot glue gun</p>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">
-								<div class="circle"></div>	
-								<a href="/portfolioWebsite/sewingMachineIndex.html" class="image fit"><img class="projectButton" src="images/AM2.jpg" alt=""></a>
-								<div class="desc projectTitle">Marble Answering Machine</div>
-								<p class="projectBrief">Durell Bishop's design of a marble answering machine recreated using a circuit playground express</p>
-							</div>
- 
-						</div>
-						<!-- <br> -->
-						<hr>						
-						<header><h3>Past Work</h3></header>
-						<br>
-						<div class="row">
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<div class="circle"></div>	
-								<a href="#teacherFeels" class="image fit"><span><img class="projectButton" src="images/teacherFeels.jpg" alt=""></span></a>
-								<div class="desc projectTitle">Teacher-Feels</div>
-								<p class="projectBrief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">	
-								<div class="circle"></div>			
-								<a href="https://ruchitaparmar.github.io/CreativeCoding/" target="_blank" class="image fit"><img class="projectButton" src="images/CreativeCoding.png" alt=""></a>
-								<div class="desc projectTitle">Creative Coding</div>
-								<p class="projectBrief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">
-								<div class="circle"></div>	
-								<a href="/portfolioWebsite/sharkIndex.html" class="image fit"><img class="projectButton" src="images/dunkBin.png" alt=""></a>
-											
-								<!-- <a href="https://drive.google.com/open?id=1gqx2J2KrAsb52Psro7yBK1OdRRbk-xiQ" target="_blank" class="image fit"><img src="images/dunkBin.png" alt=""></a> -->
-								<div class="desc projectTitle">DunkBin</div>
-								<p class="projectBrief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">
-								<div class="circle"></div>				
-								<a href="https://www.youtube.com/watch?v=DZU7qJLXF5Y&list=PL_uaeekrhGzJqrOcrevZcoQZnreO2j6uv&index=3" target="_blank" class="image fit"><img class="projectButton" src="images/cubents.png" alt=""></a>
-								<div class="desc projectTitle">CUBENTS</div>
-								<p class="projectBrief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">
-								<div class="circle"></div>				
-								<a href="https://drive.google.com/open?id=1ZMSNn-mjFVhi1UfdxhbUphDrhiLLSCYs" target="_blank" class="image fit"><img class="projectButton" src="images/exoplanets.png" alt=""></a>
-								<div class="desc projectTitle">Hunt for Exoplanets</div>
-								<p class="projectBrief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">
-								<div class="circle"></div>				
-								<a href="https://drive.google.com/open?id=1WrZhnOLKhJC0G2PlSpYorxesFNqn5QQZ" target="_blank" class="image fit"><img class="projectButton" src="images/quickDraw.png" alt=""></a>
-								<div class="desc projectTitle">Analysis of AI Based Methods to Draw Sketches</div>
-								<p class="projectBrief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-														
-							<div class="box col-4 col-6-medium col-12-small">
-								<div class="circle"></div>				
-								<a href="https://drive.google.com/open?id=14ZGEbSs2oZUypKzKRdqF-Kvppqp---QY" target="_blank" class="image fit"><img class="projectButton" src="images/engineeringDrawing.jpg" alt=""></a>
-								<div class="desc projectTitle">Engineering Drawing</div>
-								<p class="projectBrief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-								</div>
-
-						</div>
-						
-						<hr>						
-						<header><h3>Hackathon Projects</h3></header>
-						<br>
-						<div class="row">
-
-							<div class="box col-4 col-6-medium col-12-small">
-								<div class="circle"></div>				
-								<a href="https://github.com/ruchitaparmar/SmartLanes" target="_blank" class="image fit"><img class="projectButton" src="images/SmartLanes.png" alt=""></a>
-								<div class="desc projectTitle">SmartLanes</div>
-								<p class="projectBrief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">	
-								<div class="circle"></div>			
-								<a href="https://drive.google.com/open?id=1TCMqW4tzTBOVbR-ErTgtRlNZbxC9XCPZ" target="_blank" class="image fit"><img class="projectButton" src="images/swasthya.png" alt=""></a>
-								<div class="desc projectTitle">Swasthya</div>
-								<p class="projectBrief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">
-								<div class="circle"></div>				
-								<a href="https://github.com/ruchitaparmar/Ms.Know-it-all" target="_blank" class="image fit"><img class="projectButton" src="images/msknowItAll.png" alt=""></a>
-								<div class="desc projectTitle">Ms Know It All</div>
-								<p class="projectBrief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">
-								<div class="circle"></div>				
-								<a href="https://github.com/ruchitaparmar/ndvi" target="_blank" class="image fit"><img class="projectButton" src="images/ndvi.png" alt=""></a>
-								<div class="desc projectTitle">NDVI Predictor</div>
-								<p class="projectBrief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">
-								<div class="circle"></div>				
-								<a href="https://github.com/ruchitaparmar/OneWorld" target="_blank" class="image fit"><img class="projectButton" src="images/oneworld.png" alt=""></a>
-								<div class="desc projectTitle">OneWorld</div>
-								<p class="projectBrief">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-							</div>	
-
-						</div>
-
-					</section>
-
-						
-						
-			</article>
-			
-			<article id="teacherFeels" class="panel" style="height:95%; width:95%;">
-				
-				<header>
-					<h2>TeacherFeels</h2>
-				</header>
-				
-				<!-- <div class="box col-4 col-6-medium col-12-small">
-					<span class="image fit"><img src="images/portfolio/art/appleColour.jpg" alt=""></span>
-				</div>
+</style>
  -->
-			</article>
-			
-			<article id="dunkBin" class="panel" >
-				
-				<header>
-					<h2>DunkBin</h2>
-				</header>
-				
-				<div class="box col-4 col-6-medium col-12-small">	
-					<span class="image fit"><img src="images/portfolio/art/christmas3.jpg" alt=""></span>
-				</div>
 
-			</article>
-					
+  <body>
+    <br>
+  
+    <section class="page-header">
+      <h1 class="project-name">Creative Coding</h1>
+      <h4 class="project-tagline">with P5.js</h4>          
+    </section>
 
-				<!-- Art -->
-				<article id="art" class="panel">
-				
-					<header>
-						<h2>Art</h2>
-					</header>
-					
-					<p>I use a mechanical pencil and sometimes a charcoal pencil or soft pastels.</p>
+    <br>
+  <br>
+  <br>
+  <br>
 
-					<section>
-						<div class="row">
-							
-							<div class="box col-4 col-6-medium col-12-small">	
-								<span class="image fit"><img src="images/portfolio/art/appleColour.jpg" alt=""></span>
-							</div>
+    <section class="main-content"><!-- 
+      <h1 id="my-javascript-projects" target='_blank'>Creative Coding:</h1> -->
+    <p><a href="fractalTree/index.html" target='_blank'>Fractal Tree</a></p>  
+    <p><a href="snakeGame/index.html" target='_blank'>Snake Game</a></p>
+    <p><a href="infiniteCircles/index.html" target='_blank'>Infinite Circles</a></p>
+    <p><a href="rain/index.html" target='_blank'>Rain</a></p>
+    <p><a href="superEllipse/index.html" target='_blank'>Super Ellipse</a></p>
+    <p><a href="sketchBoard/index.html" target='_blank'>Sketch Board</a></p>
+  
+</section>
 
-							<div class="box col-4 col-6-medium col-12-small">				
-								<span class="image fit"><img src="images/portfolio/art/christmas3.jpg" alt=""></span>
-							</div>
+  <br>
+  <br>
+  <br>
+  <br>
+      <footer class="site-footer">
+        
+        
+          <span class="site-footer-owner"><a href="https://github.com/ruchitaparmar/CreativeCoding" target='_blank'>Creative Coding</a> is a repository maintained by <a href="https://github.com/ruchitaparmar" target='_blank'>Ruchita Parmar</a>.</span>
+        <br>
+        <br>
+        <span class="site-footer-credits">These works have been inspired by <a href="https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw" target='_blank'>'The Coding Train'</a> channel on Youtube and this website was generated using <a href="https://p5js.org/" target='_blank'>p5js</a> and <a href="https://pages.github.com" target='_blank'>GitHub Pages</a>.</span>
+      </footer> 
 
-							<div class="box col-4 col-6-medium col-12-small">				
-								<span class="image fit"><img src="images/portfolio/art/roseTattooLady.jpg" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">				
-								<span class="image fit"><img src="images/portfolio/art/halfLadyFace.jpg" alt=""></span>
-							</div>	
-
-							<div class="box col-4 col-6-medium col-12-small">	
-								<span class="image fit"><img src="images/portfolio/art/starryNight.jpg" alt=""></span>
-							</div> 
-							
-							<div class="box col-4 col-6-medium col-12-small">	
-								<span class="image fit"><img src="images/portfolio/art/stripedDressLady.jpg" alt=""></span>
-							</div> 	
-
-							<div class="box col-4 col-6-medium col-12-small">		
-								<span class="image fit"><img src="images/portfolio/art/dancerLady.jpg" alt=""></span>
-							</div> 	
-
-							<div class="box col-4 col-6-medium col-12-small">	
-								<span class="image fit"><img src="images/portfolio/art/lonelyTree.jpg" alt=""></span>
-							</div> 	
-
-							<div class="box col-4 col-6-medium col-12-small">	
-								<span class="image fit"><img src="images/portfolio/art/curtainHairLady.jpg" alt=""></span>
-							</div> 
-
-							<div class="box col-4 col-6-medium col-12-small">				
-								<span class="image fit"><img src="images/portfolio/art/hairLady3.jpg" alt=""></span>
-							</div>		
-			
-						</div>
-					</section>
-			
-				</article>
-
-				<!-- Gallery-->
-				<article id="gallery" class="panel">
-				
-					<header>
-						<h2>Gallery</h2>
-					</header>
-					
-					<p>A selection of my favourite pictures.</p>
-
-					<section>
-						<div class="row">
-
- 							<div class="box col-4 col-6-medium col-12-small">
-								<span class="image fit"><img src="images/portfolio/gallery/winningCodeshastra.jpg" alt=""></span>
-							</div>
-							
-							<div class="box col-4 col-6-medium col-12-small">
-								<span class="image fit"><img src="images/portfolio/gallery/lookingThroughTheClass.jpg" alt=""></span>
-							</div>
-							
-							<div class="box col-4 col-6-medium col-12-small">	
-								<span class="image fit"><img src="images/portfolio/gallery/annualDayPrize.jpg" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/NASA.jpg" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/makingTheNet.png" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">
-								<span class="image fit"><img src="images/portfolio/gallery/trunkMaking.png" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">				
-								<span class="image fit"><img src="images/portfolio/gallery/UXDProper.jpg" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">	
-								<span class="image fit"><img src="images/portfolio/gallery/UXDprize.jpg" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small">	
-								<span class="image fit"><img src="images/portfolio/gallery/contemplating.jpg" alt=""></span>
-							</div> 
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/codeshashtraBrainstorming.jpg" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/waxCutting.jpg" alt=""></span>
-							</div>
-							
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/teacherFeelPrototype.png" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/atHogwarts.jpg" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/makersAsylum.jpg" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/IITBprize.png" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/speakingMandarin.png" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/antiGravity.jpg" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/explainingDunkbin.png" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/snowYoga.jpg" alt=""></span>
-							</div>
-
-							<div class="box col-4 col-6-medium col-12-small"> 	
-								<span class="image fit"><img src="images/portfolio/gallery/makingASnowman.jpg" alt=""></span>
-							</div>
-							
-						</div>
-					</section>
-				
-				</article>
-
-				<!-- Terminal -->					
-				<article id="terminal" class="panel">
-
-					<header>
-						<h2>About</h2>
-					</header>
-
-
-				<!-- my catttttttttttt -->
-				<!-- <div class="svg-container column-4-medium">
-       				<object type="image/svg+xml" data="images/catAndMe.svg" width="25%" height="25%" class="svg-content" style="border-color: black 2px;"></object>
-				</div> -->
-
-					<p>For more information about me, type help inside the terminal to get started!</p>
-
-					<!-- shell.js terminal window -->
-					<div class="shell osx light col-12-medium" align="right"> <!-- shadow"> -->
-					    <div class="status-bar" style="height: 40px;">
-					        <div class="buttons">
-					            <a href="javascript:;" class="close" title="Close"></a>
-					            <a href="javascript:;" class="minimize" title="Minimize"></a>
-					            <a href="javascript:;" class="enlarge" title="Enlarge"></a>        
-					        </div>
-					        <div class="title">user@host: ~</div>
-					    </div>
-					    <div class="content"></div>
-					</div>
-
-				</article>
-
-				<!-- Contact -->
-				<article id="contact" class="panel">
-								
-					<header>
-						<h2>Contact</h2>
-					</header>
-
-					<p>Leave me a message!</p>
-					
-					<form action="MAILTO:rchta26@gmail.com" method="GET" enctype="text/plain">
-						<div>
-							<div class="row">
-								<div class="col-6 col-12-medium">
-									<input type="text" name="name" placeholder="Name" />
-								</div>
-								
-								<div class="col-6 col-12-medium">
-									<input type="text" name="email" placeholder="Email" />
-								</div>
-								
-								<div class="col-12">
-									<input type="text" name="subject" placeholder="Subject" />
-								</div>
-								
-								<div class="col-12">
-									<textarea name="message" placeholder="Message" rows="6"></textarea>
-								</div>
-								
-								<div class="col-12">
-									<input type="submit" value="Send Message" />
-								</div>
-							</div>
-						</div>
-					</form>
-				
-				</article>
-
-			</div>
-
-			<!-- Footer -->
-			<div id="footer">
-				<ul class="copyright">
-					<li>Ruchita Parmar &copy; 2020</li>
-					<li><a href="https://github.com/ruchitaparmar" target="_blank" class="icon fa-github"></a></li>
-					<li><a href="https://codepen.io/ruchita08" target="_blank" class="icon fa-codepen"></a></li>
-					<li><a href="https://linkedin.com/in/ruchitaparmar" target="_blank" class="icon fa-linkedin"></a></li>
-					<li>Design inspired by <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
-				</ul>
-			</div>
-
-		</div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>  
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
-		<script src="assets/js/pointilism.js" type="text/javascript"></script>-->
-		<script src="assets/js/main.js"></script>
-		<script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
-		<script src='https://cdn.terminal.jcubic.pl/wcwidth.js'></script>
-		<script src='https://unpkg.com/jquery.terminal/js/jquery.terminal.js'></script>
-		<script src='https://unpkg.com/jquery.terminal/js/jquery.mousewheel-min.js'></script>
-		<script src='https://unpkg.com/js-polyfills/keyboard.js'></script>
-		<script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
-		<!--<script src='https://codepen.io/jcubic/pen/WZjbgq.js?v=5'></script> -->
-		<script  src="assets/js/index.js"></script>
-
-	</body>
+    
+  </body>
 </html>
